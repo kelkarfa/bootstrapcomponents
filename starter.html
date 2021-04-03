@@ -1,16 +1,5 @@
-<!--
-Design by Bryant Smith
-http://www.bryantsmith.com
-email: templates [-at-] bryantsmith [-dot-] com
-Released under Creative Commons Attribution 2.5 Generic.  In other words, do with it what you please; but please leave the link if you'd be so kind :)
-
-Name       : Space Race
-Version    : 1.0
-Released   : 2009-08-24
--->
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="starter.css" />
@@ -19,19 +8,25 @@ Released   : 2009-08-24
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>A Farewell to Colors by Bryant Smith</title>
+    
   </head>
 
-  <body>
-    <div id="page">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div id="page" class="container">
       <div class="links text">
-        Your NavBar:
-        <a href="http://bryantsmith.com">Carousel Section</a> |
-        <a href="http://bryantsmith.com">Modal Section</a> |
-        <a href="http://bryantsmith.com">ToolTips Section</a> |
-        <a href="http://bryantsmith.com">Accordian vs Collapse</a>
-     
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+        <a class="nav-link" href="#carous">Carousel Section</a></li>
+            <li class="nav-item">
+        <a class="nav-link" href="#moda1">Modal Section</a></li>
+            <li class="nav-item">
+        <a class="nav-link" href="#tootip">ToolTips Section</a></li>
+            <li class="nav-item">
+        <a class="nav-link" href="#colla1">Accordian vs Collapse</a></li>
+          </ul>
+      </nav>
       </div>
-      <div></div>
 
       <div id="header">
         <h1>Space Race</h1>
@@ -125,10 +120,88 @@ Released   : 2009-08-24
       </div>
 
 
+     <div id="carous">
+    <div class="carousel slide" id="carouse1" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#carouse1" data-slide-to="0" class="active"></li>
+        <li data-target="#carouse1" data-slide-to="1"></li>
+        <li data-target="#carouse1" data-slide-to="2"></li>
+        <li data-target="#carouse1" data-slide-to="3"></li>
+      </ul>
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <img src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image1.jpg"/>
+        
+          <div class="content_right">
+            <h2>Russia Launches Sputnik</h2>
+            <p>
+              On July 29, 1957, in recognition of the 1957-1958 International
+              Geophysical Year, the White House announced that the U.S. intended
+              to launch satellites by the spring of 1958. This became known as
+              Project Vanguard. On July 31, the Soviets announced that they
+              intended to launch a satellite by the fall of 1957.
+            </p>
+            <p>Sputnik is regarded as the beginning of the Space Race.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image2.jpg"/>
+          <div class="content_right">
+            <h2>The Explorer 1</h2>
+            <p>
+              Explorer 1 (international designation 1958 Alpha 1) was the first
+              Earth satellite of the United States, launched on February 1, 1958
+              at 03:48 UTC from LC-26 at Cape Canaveral Air Force Station as
+              part of the United States program for the International
+              Geophysical Year and in response to the launch of the Soviet
+              satellite Sputnik 1. It was the first spacecraft to recognize the
+              Van Allen radiation belt, although Sputnik 2 detected it earlier.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image3.jpg"/>
+          <div class="content_right">
+            <h2>Lunokhod 1</h2>
+            <p>
+              Lunokhod 1 (Луноход, moon walker in Russian) was the first of two
+              unmanned lunar rovers landed on the Moon by the Soviet Union as
+              part of its Lunokhod program. The spacecraft which carried
+              Lunokhod 1 was named Luna 17. Lunokhod was the first roving
+              remote-controlled robot to land on another celestial body.
+            </p>
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image4.jpg"/>
+          <div class="content_right">
+            <h2>End of the Space Race</h2>
+            <p>
+              The 17 July 1975 rendezvous of the Apollo and Soyuz spacecraft
+              traditionally marks the end of the Space Race.
+              While the Sputnik 1 launch can clearly be called the start of the
+              Space Race, its end is more debatable. Most hotly contested during
+              the 1960s, the Space Race continued apace through the U.S. Apollo
+              moon landing of 1969. Although they followed Apollo 11 with five
+              more manned lunar landings, American space scientists turned to
+              new arenas. Skylab was to gather data, and the Space Shuttle was
+              intended to return spaceships intact from space journeys.
+            </p>
+          </div>
+        </div>
+
+      </div>
       
-    <div class="carousel">
-        <p class="carouseltext">Input Carousel Here.</p>
+      <a class="carousel-control-prev" href="#carouse1" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouse1" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
     </div>
+     </div>
     <div id="content">
       <div class="content_instance">
         <img
@@ -293,9 +366,104 @@ Released   : 2009-08-24
 
  
   <div id="content">
-    <div class="content_top">
+    
+    <div class="content_top" id="moda1">
+      
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">
       <h1 class="text">CLICK ON THIS TEXT TO OPEN MODAL</h1>
+      </button>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="content_instance">
+                <img
+                  src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image1.jpg"
+                />
+                <div class="content_right">
+                  <h4>Russia Launches Sputnik</h4>
+                  <p>
+                    On July 29, 1957, in recognition of the 1957-1958 International
+                    Geophysical Year, the White House announced that the U.S. intended
+                    to launch satellites by the spring of 1958. This became known as
+                    Project Vanguard. On July 31, the Soviets announced that they
+                    intended to launch a satellite by the fall of 1957.
+                  </p>
+                  
+                </div>
+              </div>
+              <div class="content_instance">
+                <img
+                  src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image2.jpg"
+                />
+                <div class="content_right">
+                  <h4>The Explorer 1</h4>
+                  <p>
+                    Explorer 1 (international designation 1958 Alpha 1) was the first
+                    Earth satellite of the United States, launched on February 1, 1958
+                    at 03:48 UTC from LC-26 at Cape Canaveral Air Force Station as
+                    part of the United States program for the International
+                    Geophysical Year and in response to the launch of the Soviet
+                    satellite Sputnik 1. It was the first spacecraft to recognize the
+                    Van Allen radiation belt, although Sputnik 2 detected it earlier.
+                  </p>
+                </div>
+              </div>
+              
+  <div class="content_instance">
+    
+    <img
+      src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image3.jpg" 
+    /></a>
+    <div class="content_right">
+      <h4>Lunokhod 1</h4>
+      <p>
+        Lunokhod 1 (Луноход, moon walker in Russian) was the first of two
+        unmanned lunar rovers landed on the Moon by the Soviet Union as
+        part of its Lunokhod program. The spacecraft which carried
+        Lunokhod 1 was named Luna 17. Lunokhod was the first roving
+        remote-controlled robot to land on another celestial body.
+      </p>
+      
     </div>
+  </div>
+  <div class="content_instance">
+    <img
+      src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image4.jpg"
+    />
+    <div class="content_right">
+      <h4>End of the Space Race</h4>
+      <p>
+        The 17 July 1975 rendezvous of the Apollo and Soyuz spacecraft
+        traditionally marks the end of the Space Race.
+        While the Sputnik 1 launch can clearly be called the start of the
+        Space Race, its end is more debatable. Most hotly contested during
+        the 1960s, the Space Race continued apace through the U.S. Apollo
+        moon landing of 1969. Although they followed Apollo 11 with five
+        more manned lunar landings, American space scientists turned to
+        new arenas. Skylab was to gather data, and the Space Shuttle was
+        intended to return spaceships intact from space journeys.
+      </p>
+    </div>
+  </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+          </div>
+        
+
+      </div>
+      </div>
+    
     <div class="content_instance">
       <img
         src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image1.jpg"
@@ -380,13 +548,14 @@ Released   : 2009-08-24
   
 
 <div id="content">
-  <div class="content_top">
+  <div class="container">
+  <div class="content_top" id="tootip">
     <h1 class="text">TOOLTIPS:CREATE TOOLTIPS FOR IMAGES</h1>
   </div>
   <div class="content_instance">
-    <img
-      src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image1.jpg"
-    />
+    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Russia Launches Sputnik">
+<img src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image1.jpg"/>
+    </a>
     <div class="content_right">
       <h2>Russia Launches Sputnik</h2>
       <p>
@@ -400,9 +569,10 @@ Released   : 2009-08-24
     </div>
   </div>
   <div class="content_instance">
+    <a href="#" data-toggle="tooltip" data-placement="bottom" title="The Explorer">
     <img
       src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image2.jpg"
-    />
+    /></a>
     <div class="content_right">
       <h2>The Explorer 1</h2>
       <p>
@@ -417,9 +587,10 @@ Released   : 2009-08-24
     </div>
   </div>
   <div class="content_instance">
+    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Lunokhod 1">
     <img
-      src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image3.jpg"
-    />
+      src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image3.jpg" 
+    /></a>
     <div class="content_right">
       <h2>Lunokhod 1</h2>
       <p>
@@ -441,9 +612,8 @@ Released   : 2009-08-24
   </div>
 
   <div class="content_instance">
-    <img
-      src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image4.jpg"
-    />
+    <a href="#" data-toggle="tooltip" data-placement="bottom" title="End of the Space Race">
+    <img src="https://www.html.am/templates/downloads/bryantsmith/spacerace/image4.jpg"/></a>
     <div class="content_right">
       <h2>End of the Space Race</h2>
       <p>
@@ -461,11 +631,105 @@ Released   : 2009-08-24
       </p>
     </div>
   </div>
+</div>
 </div>
 
 <div id="content">
-  <div class="content_top">
+  <div class="container">
+  <div id="colla1">
     <h1 class="text">Accordian vs Collapse Section</h1>
+    <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#colaps1">Russia Sputnik</button>
+    <div id="colaps1" class="collapse"><p>
+      On July 29, 1957, in recognition of the 1957-1958 International
+      Geophysical Year, the White House announced that the U.S. intended
+      to launch satellites by the spring of 1958. This became known as
+      Project Vanguard. On July 31, the Soviets announced that they
+      intended to launch a satellite by the fall of 1957.
+    </p></div>
+    <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#colaps2">The Explorer 1</button>
+    <div id="colaps2" class="collapse"><p>
+      Explorer 1 (international designation 1958 Alpha 1) was the first
+      Earth satellite of the United States, launched on February 1, 1958
+      at 03:48 UTC from LC-26 at Cape Canaveral Air Force Station as
+      part of the United States program for the International
+      Geophysical Year and in response to the launch of the Soviet
+      satellite Sputnik 1. It was the first spacecraft to recognize the
+      Van Allen radiation belt, although Sputnik 2 detected it earlier.
+    </p></div>
+    <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#colaps3">Lunokhod 1</button>
+    <div id="colaps3" class="collapse"><p>
+      Lunokhod 1 (Луноход, moon walker in Russian) was the first of two
+      unmanned lunar rovers landed on the Moon by the Soviet Union as
+      part of its Lunokhod program. The spacecraft which carried
+      Lunokhod 1 was named Luna 17. Lunokhod was the first roving
+      remote-controlled robot to land on another celestial body.
+    </p></div>
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#colaps4">End of the Space Race</button>
+    <div id="colaps4" class="collapse"><p>
+      The 17 July 1975 rendezvous of the Apollo and Soyuz spacecraft
+      traditionally marks the end of the Space Race
+    </p></div>
+  </div>
+  </div>
+  <div class="container">
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="card-link" data-toggle="collapse" href="#one">Russia Sputnik</a>
+        </div>
+        <div id="one" class="collapse show" data-parent="#accordion">
+          <h4>Russia Launches Sputnik</h4>
+          <p>
+            On July 29, 1957, in recognition of the 1957-1958 International
+            Geophysical Year, the White House announced that the U.S. intended
+            to launch satellites by the spring of 1958. This became known as
+            Project Vanguard. On July 31, the Soviets announced that they
+            intended to launch a satellite by the fall of 1957.
+          </p></div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#two">The Explorer 1</a>
+        </div>
+        <div id="two" class="collapse" data-parent="#accordion">
+          <h4>The Explorer 1</h4>
+          <p>
+            Explorer 1 (international designation 1958 Alpha 1) was the first
+            Earth satellite of the United States, launched on February 1, 1958
+            at 03:48 UTC from LC-26 at Cape Canaveral Air Force Station as
+            part of the United States program for the International
+            Geophysical Year and in response to the launch of the Soviet
+            satellite Sputnik 1. It was the first spacecraft to recognize the
+            Van Allen radiation belt, although Sputnik 2 detected it earlier.
+          </p></div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#three">Lunokhod 1</a>
+        </div>
+        <div id="three" class="collapse" data-parent="#accordion">
+          <h4>Lunokhod 1</h4>
+          <p>
+            Lunokhod 1 (Луноход, moon walker in Russian) was the first of two
+            unmanned lunar rovers landed on the Moon by the Soviet Union as
+            part of its Lunokhod program. The spacecraft which carried
+            Lunokhod 1 was named Luna 17. Lunokhod was the first roving
+            remote-controlled robot to land on another celestial body.
+          </p></div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#four">End of the Space Race</a>
+        </div>
+        <div id="four" class="collapse" data-parent="#accordion">
+          <h4>End of the Space Race</h4>
+          <p>
+            The 17 July 1975 rendezvous of the Apollo and Soyuz spacecraft
+            traditionally marks the end of the Space Race
+          </p></div>
+      </div>
+
+    </div>
   </div>
   <div class="content_instance">
     <img
@@ -547,7 +811,7 @@ Released   : 2009-08-24
   </div>
 </div>
 
-
+      <div>
         <div class="content_instance_big">
           <h2>Use only this div for one big section of content</h2>
           <p>&nbsp;</p>
